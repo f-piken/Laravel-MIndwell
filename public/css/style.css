@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    font-family: Arial, sans-serif;
+}
+
+  /* Sidebar */
+.jdl{
+    display: flex;
+    padding: 20px 0px 20px 10px;
+
+}
+.logo1 { 
+    width: 30px;
+    height: 30px;
+}
+.judul{
+    color: #fff;
+    padding-left: 15px;
+}
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    border-top: 1px solid #555;
+}
+.sidebar ul li a{
+    padding-left: 5px;
+}
+.sidebar ul li:last-child {
+    border-bottom: none;
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.logo{
+    margin: 0;
+    color: #fff;
+}
+.logo + a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.aktif {
+    background-color: #444;
+}
+.sidebar ul :hover {
+    background-color: #444;
+}
+
+  /* Main container */
+  .container {
+    margin-left: 60px; /* Adjust with sidebar width */
+    padding: 20px;
+  }
+
+  .container h1 {
+    margin-bottom: 20px;
+  }
+
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+
+  th {
+    background-color: #333;
+    color: #fff;
+  }
+
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+#btn{
+    display: none;
+}
+#menu-btn{
+    width: 32px;
+    margin: 28px 10px 0px 80px;
+    display: inline-block;
+}
+.icon-large{
+    font-size: 30px;
+}
+.sidebar{
+    display: none;
+    /* width: 50px; */
+}
+#btn:checked ~ .sidebar {
+    display: inline-block;
+    width: 250px;
+}
+#btn:checked ~ #menu-btn{
+    width: 32px;
+    margin: 28px 10px 0px 270px;
+    display: inline-block;
+}
+
+.sidebar ul li a{
+    font-size: 20px;
+  }
+  form button{
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 5px;
+  }
+  .tambah{
+            margin-bottom: 5px;
+            float: left;
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #0c0c0c;
+        }
+        .btn-edit,
+        .btn-hapus{
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .btn-edit{
+            background-color: #27ff6f;
+        }
+        .btn-hapus{
+            background-color: #ff1111;
+        }
+
+        form {
+            display: block;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            box-sizing: border-box;
+            width: 90%;
+        }
+        
+        .simpan {
+            display: block;
+            padding: 10px;
+            background-color: #0c0c0c;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            float: right;
+            margin-right: 10%;
+        }
+        
+        .simpan:hover {
+            background-color: #0056b3;
+        }
+
+        .sidebar ul li a{
+            font-size: 20px;
+          }
+          form button{
+            border: none;
+            background-color: transparent;
+            color: #fff;
+            font-size: 20px;
+            margin-left: 5px;
+          }
+          .btn-no a,
+          .btn-yes a{
+            color: #fff;
+            text-decoration: none;
+          }
+          .btn-no,
+          .btn-yes{
+              margin-top: 15px;
+              border: none;
+              color: #fff;
+              padding: 5px 15px;
+              border-radius: 5px;
+              font-size: 20px;
+              cursor: pointer;
+            }
+            .btn-no{
+               background-color: #27ff6f;
+            }
+            .btn-yes{
+              background-color: #ff1111;
+            }
